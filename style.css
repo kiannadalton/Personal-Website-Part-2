@@ -1,0 +1,169 @@
+
+/* The below section includes all primary tags that are similar across all pages. */
+
+body {
+    background-color: #5c715e;
+    margin: 0;
+}
+
+hr{
+    border: 5px solid #3f4f41;
+}
+
+.header{
+    background-color: #3f4f41;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+    border: 3px solid #3f4f41;
+}
+
+#head {
+    color: white;
+    background-color: #3f4f41;
+    text-decoration: none;
+    transition: .2s linear;
+    padding: 5px;
+}
+
+#head:hover {
+    color: #b6cdbd;
+    border-bottom: .1rem solid;
+}
+
+.header p {
+    padding: 0px 16px 0px 16px;
+    background-color: #3f4f41;
+    color: white;
+}
+
+
+h1{
+    font-size: 2.5rem;
+    margin:  0% 10% 0% 10%;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid #8d958f;
+    background-color: #8d958f;
+}
+
+hr{
+    margin:  0% 10% 0% 10%;
+    color: #5c715e;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin:  0% 10% 0% 10%;
+    background-color: #bfd1c1;
+    border-bottom: 3px solid #3f4f41;
+    padding: 10px 20px 10px 20px;
+}
+
+footer{
+    position: absolute bottom;
+    display: block;
+    text-align: center;
+    background-color: #3f4f41;
+    padding: 10px;
+    font-size: 0;
+    margin-top: auto;
+}
+
+.logo{
+    height: 35px; width: auto;
+    padding: 0;
+    margin: 0px 3px;
+}
+
+/* The below begins the Home Page styling */
+
+
+.home-body {
+    background-color: #ddeedf;
+    flex-wrap: wrap;
+    border: 5px #ddeedf;
+    margin:  0% 10% 0% 10%;
+    font-size: 1.7rem;
+    padding: 25px;
+    display: flow-root;
+}
+
+.home-body p {
+    background-color: #ddeedf;
+    color: black;
+}
+
+#profile {
+    height: 25rem; width: auto;
+    float: right;
+    margin: 15px 15px;
+    border: 2px solid #5c715e;
+}
+
+/* The below begins the About Page styling */
+
+.about {
+    height: 18rem;
+    background-color: #ddeedf;
+    border: 15px solid #ddeedf;
+}
+
+.about-p{
+    height: 100px;
+    width: 60%;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    background-color: #ddeedf;
+    font-size: 1.2rem;
+}
+
+.about-me {
+    background-color: #ddeedf;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin:  0% 10% 0% 10%;
+    padding: 5px 15px 5px 15px;
+}
+
+blockquote{
+    margin: 15px 40px 15px 60px;
+    font-style: italic;
+}
+
+/* The below begins the Portfolio Page styling */
+
+.port{
+    height: 300px;
+    width: 60%;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+}
+
+.port-img {
+    height: 20rem;
+    background-color: #ddeedf;
+}
+
+.portfolio{
+    background-color: #ddeedf;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    border: 15px solid #ddeedf;
+    margin:  0% 10% 0% 10%;
+    font-size: 1.2rem;
+
+}
+
+
