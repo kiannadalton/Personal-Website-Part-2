@@ -26,7 +26,7 @@ hr{
     color: white;
     background-color: #3f4f41;
     text-decoration: none;
-    transition: .2s linear;
+    transition: .4s linear;
     padding: 5px;
 }
 
@@ -56,7 +56,7 @@ hr{
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
     margin:  0% 10% 0% 10%;
     background-color: #bfd1c1;
     border-bottom: 3px solid #3f4f41;
@@ -87,9 +87,10 @@ footer{
     flex-wrap: wrap;
     border: 5px #ddeedf;
     margin:  0% 10% 0% 10%;
-    font-size: 1.7rem;
+    font-size: 1.75rem;
     padding: 25px;
     display: flow-root;
+    min-height: 80vh;
 }
 
 .home-body p {
@@ -98,7 +99,8 @@ footer{
 }
 
 #profile {
-    height: 25rem; width: auto;
+    height: auto; 
+    width: 30%;
     float: right;
     margin: 15px 15px;
     border: 2px solid #5c715e;
@@ -107,28 +109,30 @@ footer{
 /* The below begins the About Page styling */
 
 .about {
-    height: 18rem;
+    height: auto;
+    width: 30%;
     background-color: #ddeedf;
-    border: 15px solid #ddeedf;
+    border: 20px solid #ddeedf;
 }
 
 .about-p{
-    height: 100px;
     width: 60%;
     display: inline-block;
     margin: 5px;
     padding: 5px;
     color: black;
     background-color: #ddeedf;
-    font-size: 1.2rem;
+    font-size: 1.75rem;
 }
 
 .about-me {
     background-color: #ddeedf;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    overflow: visible;
     margin:  0% 10% 0% 10%;
     padding: 5px 15px 5px 15px;
 }
@@ -136,6 +140,8 @@ footer{
 blockquote{
     margin: 15px 40px 15px 60px;
     font-style: italic;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 /* The below begins the Portfolio Page styling */
@@ -149,21 +155,186 @@ blockquote{
     color: black;
 }
 
-.port-img {
-    height: 20rem;
-    background-color: #ddeedf;
-}
-
 .portfolio{
     background-color: #ddeedf;
-    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-clip-margin: content-box;
+    overflow: contain;
+    display: grid;
+    grid-template-columns: 69% 31%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "p1 port-img"
+    "p2 port-img"
+    "p3 port-img"
+    ;
+}
+
+.p1{
+    grid-area: p1;
+    margin-top: 1em;
+    margin-bottom: 0;
+    display: grid;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.75rem;
+    background-color: #ddeedf;
+}
+
+.p2{
+    grid-area: p2;
+    margin-top: 1em;
+    margin-bottom: 0em;
+    display: grid;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.75rem;
+    background-color: #ddeedf;
+}
+
+.p3{
+    grid-area: p3;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: grid;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.75rem;
+    background-color: #ddeedf;
+}
+
+.port-img {
+    grid-area: port-img;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: #ddeedf;
+} 
+
+/* The below is the code for the Contact page */
+
+#form {
+    background-color: #ddeedf;
+    height: 80vh;
+    display: block;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; 
     border: 15px solid #ddeedf;
     margin:  0% 10% 0% 10%;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    padding: 0% 5% 0% 5%;
+    font-weight: bold;
 
 }
 
+#form div{
+    margin-bottom: 1rem;
+}
 
+#form input {
+    width:50%;
+    height: 30px;
+    font-size: 1.7rem;
+}
+
+#form textarea {
+    width:50%;
+    font-size: 1.7rem;
+}
+
+#form #submit {
+    width: 15rem;
+    height: auto;
+    font-size: 1.7rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+/* The below code is the code for media query */
+
+
+@media screen and (max-width: 900px){
+   h1{
+    font-size: 2rem;
+   }
+
+   h2 {
+    font-size: 1.75rem;
+   }
+   
+    .home-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        font-size: 1.5rem;
+    }   
+   
+    #profile {
+        width: 80%;
+        height: auto;
+    }
+
+    #lincoln {
+        font-size: 1.5rem;
+        margin: 15px 8px 15px 8px;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .about-p {
+        width: 90%;
+    }
+
+    .about {
+        width: 90%;
+        height: auto;
+    }
+
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+
+    .port-img{
+        width: 90%;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    #form{
+        font-size: 1.5rem;
+    }
+
+    #form input {
+        width:100%;
+        height: auto;
+        font-size: 1.3rem;
+    }
+
+    #form textarea {
+        width:100%;
+        font-size: 1.3rem;
+    }
+
+    #form #submit {
+        width: 100%;
+        height: auto;
+        font-size: 1.5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+}
+}
